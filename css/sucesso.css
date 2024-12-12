@@ -1,0 +1,11 @@
+*{
+    text-decoration: none;
+    
+}
+.botao{
+    width: 100%; 
+    padding: 10px;
+    margin: 5px 0; 
+    border: 1px solid #808080; 
+    border-radius: 4px; 
+}

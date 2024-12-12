@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Página de Cadastro</title>
+
+</head>
+<body>
+        <section class="card">
+            <div class="login">
+                <h1 class="titulo">Cadastro</h1>
+                <br><br>
+                <form action="api/cadastro.php" method="post">
+                    
+                    <div class="painel">
+                        <input type="text" name="nome" class="" placeholder="Digite seu nome" required>
+                        <br><br>
+
+                        <input type="email" name="email" class="" placeholder="Digite seu Email" required>
+                        <br><br>
+
+                        <input type="tel" name="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\) \d{5}-\d{4}" maxlength="15" required>
+                        <br><br>
+
+                        <input type="text" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX" maxlength="14" oninput="mascaraCPF(this)" required>
+                        <br><br>
+
+                        <input type="submit" value="Cadastrar">
+                        <br><br>
+
+                    </div>
+                </form>
+                
+            </div>
+        </section>   
+    <script src="login.js"></script>
+</body>
+</html>
